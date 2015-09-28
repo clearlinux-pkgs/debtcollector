@@ -4,7 +4,7 @@
 #
 Name     : debtcollector
 Version  : 0.8.0
-Release  : 7
+Release  : 8
 URL      : https://pypi.python.org/packages/source/d/debtcollector/debtcollector-0.8.0.tar.gz
 Source0  : https://pypi.python.org/packages/source/d/debtcollector/debtcollector-0.8.0.tar.gz
 Summary  : A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.

@@ -4,9 +4,9 @@
 #
 Name     : debtcollector
 Version  : 0.8.0
-Release  : 8
-URL      : https://pypi.python.org/packages/source/d/debtcollector/debtcollector-0.8.0.tar.gz
-Source0  : https://pypi.python.org/packages/source/d/debtcollector/debtcollector-0.8.0.tar.gz
+Release  : 9
+URL      : http://tarballs.openstack.org/debtcollector/debtcollector-0.8.0.tar.gz
+Source0  : http://tarballs.openstack.org/debtcollector/debtcollector-0.8.0.tar.gz
 Summary  : A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.
 Group    : Development/Tools
 License  : Apache-2.0
@@ -65,6 +65,9 @@ Debtcollector
 %package python
 Summary: python components for the debtcollector package.
 Group: Default
+Requires: Babel-python
+Requires: six-python
+Requires: wrapt-python
 
 %description python
 python components for the debtcollector package.

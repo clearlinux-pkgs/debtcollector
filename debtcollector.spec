@@ -4,7 +4,7 @@
 #
 Name     : debtcollector
 Version  : 0.8.0
-Release  : 9
+Release  : 10
 URL      : http://tarballs.openstack.org/debtcollector/debtcollector-0.8.0.tar.gz
 Source0  : http://tarballs.openstack.org/debtcollector/debtcollector-0.8.0.tar.gz
 Summary  : A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.

@@ -1,10 +1,17 @@
 CHANGES
 =======
 
+1.5.0
+-----
+
+* Updated from global requirements
+
 1.4.0
 -----
 
 * Drop babel as requirement since its not used
+* Fix renamed_kwarg to preserve argspec
+* Add tests for decorated argspec preservation
 * Updated from global requirements
 * Updated from global requirements
 

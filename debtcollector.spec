@@ -4,7 +4,7 @@
 #
 Name     : debtcollector
 Version  : 1.7.0
-Release  : 23
+Release  : 24
 URL      : http://tarballs.openstack.org/debtcollector/debtcollector-1.7.0.tar.gz
 Source0  : http://tarballs.openstack.org/debtcollector/debtcollector-1.7.0.tar.gz
 Summary  : A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.
@@ -15,14 +15,17 @@ BuildRequires : Babel-python
 BuildRequires : Jinja2
 BuildRequires : Pygments
 BuildRequires : Sphinx-python
+BuildRequires : configparser-python
 BuildRequires : coverage-python
 BuildRequires : discover-python
 BuildRequires : docutils-python
+BuildRequires : enum34-python
 BuildRequires : extras
 BuildRequires : extras-python
 BuildRequires : fixtures-python
 BuildRequires : flake8-python
 BuildRequires : hacking
+BuildRequires : imagesize-python
 BuildRequires : iso8601-python
 BuildRequires : markupsafe-python
 BuildRequires : mccabe-python
@@ -36,7 +39,6 @@ BuildRequires : oslotest-python
 BuildRequires : pbr
 BuildRequires : pep8
 BuildRequires : pip
-BuildRequires : pycodestyle-python
 BuildRequires : pyflakes-python
 BuildRequires : python-dev
 BuildRequires : python-mimeparse-python

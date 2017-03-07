@@ -4,13 +4,17 @@
 #
 Name     : debtcollector
 Version  : 1.7.0
-Release  : 29
+Release  : 30
 URL      : http://tarballs.openstack.org/debtcollector/debtcollector-1.7.0.tar.gz
 Source0  : http://tarballs.openstack.org/debtcollector/debtcollector-1.7.0.tar.gz
 Summary  : A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: debtcollector-python
+Requires: funcsigs
+Requires: pbr
+Requires: six
+Requires: wrapt
 BuildRequires : Babel-python
 BuildRequires : Jinja2
 BuildRequires : Pygments
@@ -19,13 +23,11 @@ BuildRequires : configparser-python
 BuildRequires : coverage-python
 BuildRequires : discover-python
 BuildRequires : docutils-python
-BuildRequires : enum34-python
 BuildRequires : extras
 BuildRequires : extras-python
 BuildRequires : fixtures-python
 BuildRequires : flake8-python
 BuildRequires : hacking
-BuildRequires : imagesize-python
 BuildRequires : iso8601-python
 BuildRequires : markupsafe-python
 BuildRequires : mccabe-python
@@ -68,8 +70,6 @@ Debtcollector
 %package python
 Summary: python components for the debtcollector package.
 Group: Default
-Requires: six-python
-Requires: wrapt-python
 
 %description python
 python components for the debtcollector package.
@@ -80,12 +80,12 @@ python components for the debtcollector package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1484541758
+export SOURCE_DATE_EPOCH=1488897358
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1484541758
+export SOURCE_DATE_EPOCH=1488897358
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force

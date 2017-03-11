@@ -4,7 +4,7 @@
 #
 Name     : debtcollector
 Version  : 1.7.0
-Release  : 31
+Release  : 32
 URL      : http://tarballs.openstack.org/debtcollector/debtcollector-1.7.0.tar.gz
 Source0  : http://tarballs.openstack.org/debtcollector/debtcollector-1.7.0.tar.gz
 Summary  : A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.
@@ -15,50 +15,11 @@ Requires: funcsigs
 Requires: pbr
 Requires: six
 Requires: wrapt
-BuildRequires : Babel-python
-BuildRequires : Jinja2
-BuildRequires : Pygments
-BuildRequires : Sphinx-python
-BuildRequires : configparser-python
-BuildRequires : coverage-python
-BuildRequires : discover-python
-BuildRequires : docutils-python
-BuildRequires : extras
-BuildRequires : extras-python
-BuildRequires : fixtures-python
-BuildRequires : flake8-python
-BuildRequires : hacking
-BuildRequires : iso8601-python
-BuildRequires : markupsafe-python
-BuildRequires : mccabe-python
-BuildRequires : mox3-python
-BuildRequires : netaddr
-BuildRequires : netifaces-python
-BuildRequires : oslo.i18n-python
-BuildRequires : oslo.utils-python
-BuildRequires : oslosphinx-python
-BuildRequires : oslotest-python
 BuildRequires : pbr
-BuildRequires : pep8
 BuildRequires : pip
-BuildRequires : pyflakes-python
 BuildRequires : python-dev
-BuildRequires : python-mimeparse-python
-BuildRequires : python-mock
-BuildRequires : python-subunit
 BuildRequires : python3-dev
-BuildRequires : pytz-python
-BuildRequires : requests-python
 BuildRequires : setuptools
-BuildRequires : six
-BuildRequires : six-python
-BuildRequires : testrepository-python
-BuildRequires : testscenarios
-BuildRequires : testtools
-BuildRequires : testtools-python
-BuildRequires : traceback2-python
-BuildRequires : unittest2-python
-BuildRequires : wrapt-python
 
 %description
 Debtcollector
@@ -80,12 +41,12 @@ python components for the debtcollector package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1489026923
+export SOURCE_DATE_EPOCH=1489273649
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1489026923
+export SOURCE_DATE_EPOCH=1489273649
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force

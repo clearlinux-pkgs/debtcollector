@@ -1,6 +1,41 @@
 CHANGES
 =======
 
+1.12.0
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Update reno for stable/ocata
+
+1.11.0
+------
+
+* Add Constraints support
+* Show team and repo badges on README
+
+1.10.0
+------
+
+* Updated from global requirements
+* Typo fix for module debtcollector
+* Updated from global requirements
+* Add reno for release notes management
+* Trivial: Remove 'MANIFEST.in'
+* Updated from global requirements
+
+1.9.0
+-----
+
+* Updated from global requirements
+* Update homepage with developer documentation page
+* Fix a typo in comment
+
+1.8.0
+-----
+
+* Drop *openstack/common* in flake8 exclude list
+
 1.7.0
 -----
 

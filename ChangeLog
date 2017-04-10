@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+1.13.0
+------
+
+* Remove testscenarios from test-requirements.txt
+* Python 3.4 support has been removed
+
 1.12.0
 ------
 

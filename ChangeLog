@@ -1,6 +1,63 @@
 CHANGES
 =======
 
+1.20.0
+------
+
+* Switch to stestr
+* fix tox python3 overrides
+* Trivial: Update pypi url to new url
+* remove obsolete tox environments
+* set default python to python3
+* add lower-constraints job
+* pypy is not checked at gate
+* Updated from global requirements
+* Updated from global requirements
+* Update links in README
+* Update reno for stable/queens
+* Updated from global requirements
+* Updated from global requirements
+
+1.19.0
+------
+
+* Avoid tox\_install.sh for constraints support
+* Remove setting of version/release from releasenotes
+* Updated from global requirements
+
+1.18.0
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Update reno for stable/pike
+* Updated from global requirements
+
+1.17.0
+------
+
+* Update URLs in documents according to document migration
+
+1.16.0
+------
+
+* rearrange existing documentation to fit the new standard layout
+* switch from oslosphinx to openstackdocstheme
+* Updated from global requirements
+
+1.15.0
+------
+
+* Remove pbr warnerrors in favor of sphinx check
+* Updated from global requirements
+
+1.14.0
+------
+
+* Do not require oslotest for testing
+* Updated from global requirements
+* Updated from global requirements
+
 1.13.0
 ------
 
@@ -40,7 +97,7 @@ CHANGES
 1.8.0
 -----
 
-* Drop *openstack/common* in flake8 exclude list
+* Drop \*openstack/common\* in flake8 exclude list
 
 1.7.0
 -----
@@ -62,7 +119,7 @@ CHANGES
 -----
 
 * Drop babel as requirement since its not used
-* Fix renamed_kwarg to preserve argspec
+* Fix renamed\_kwarg to preserve argspec
 * Add tests for decorated argspec preservation
 * Updated from global requirements
 * Updated from global requirements
@@ -76,9 +133,9 @@ CHANGES
 1.2.0
 -----
 
-* Add updated_kwarg_default_value decorator
+* Add updated\_kwarg\_default\_value decorator
 * Allow replacing a keyword argument
-* Add 'removed_class' class decorator
+* Add 'removed\_class' class decorator
 * py26/py33 are no longer supported by Infra's CI
 
 1.1.0
@@ -90,10 +147,10 @@ CHANGES
 -----
 
 * Updated from global requirements
-* Update get_class_name from olso.utils
+* Update get\_class\_name from olso.utils
 * Remove Python 2.6 classifier
 * Remove python 2.6 and cleanup tox.ini
-* Add 'moved_read_only_property' descriptor
+* Add 'moved\_read\_only\_property' descriptor
 
 0.10.0
 ------
@@ -103,15 +160,15 @@ CHANGES
 0.9.0
 -----
 
-* Add a 'removed_property' descriptor class
+* Add a 'removed\_property' descriptor class
 * No need for Oslo Incubator Sync
 * docs - Set pbr 'warnerrors' option for doc build
 * Include changelog/history in docs
 * tweak language in readme
 * Enhance the README
-* Change ignore-errors to ignore_errors
+* Change ignore-errors to ignore\_errors
 * Updated from global requirements
-* Activate pep8 check that _ is imported
+* Activate pep8 check that \_ is imported
 * Add a moved function helper
 
 0.8.0
@@ -126,7 +183,7 @@ CHANGES
 
 * Updated from global requirements
 * Expose a top level 'deprecate' function
-* Add @removals.removed_kwarg on an __init__ method
+* Add @removals.removed\_kwarg on an \_\_init\_\_ method
 * Improve + test keyword argument @classmethod removal
 * Add example for removing a @classmethod
 
@@ -144,7 +201,7 @@ CHANGES
 
 * Remove oslo.utils dependency
 * Updated from global requirements
-* Ensure that the incoming 'new_class' is actually a class
+* Ensure that the incoming 'new\_class' is actually a class
 * Allow providing the deprecation category
 
 0.4.0
@@ -161,7 +218,7 @@ CHANGES
 * Add a removed module deprecation helper
 * Updated from global requirements
 * Move to hacking 0.10
-* Add a 'removed_kwarg' function/method decorator
+* Add a 'removed\_kwarg' function/method decorator
 * Match the updated openstack-manuals description
 * Format the method/class removals messages like the others
 * Add examples of using the new removals decorator
@@ -178,7 +235,7 @@ CHANGES
 
 * Upper case python
 * Fix up the docs into reasonable shape
-* Add a moved *instance* method deprecation pattern
+* Add a moved \*instance\* method deprecation pattern
 * Initial import of renames/moves + tests
 * Add a .gitreview file with correct values
 * Adjust summary of project

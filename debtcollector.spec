@@ -6,7 +6,7 @@
 #
 Name     : debtcollector
 Version  : 1.20.0
-Release  : 36
+Release  : 37
 URL      : http://tarballs.openstack.org/debtcollector/debtcollector-1.20.0.tar.gz
 Source0  : http://tarballs.openstack.org/debtcollector/debtcollector-1.20.0.tar.gz
 Source99 : http://tarballs.openstack.org/debtcollector/debtcollector-1.20.0.tar.gz.asc

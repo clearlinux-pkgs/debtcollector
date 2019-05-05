@@ -1,10 +1,23 @@
 CHANGES
 =======
 
+1.21.0
+------
+
+* Use template for lower-constraints
+* Change openstack-dev to openstack-discuss
+* Don't quote {posargs} in tox.ini
+* add lib-forward-testing-python3 test job
+* add python 3.6 unit test job
+* Remove PyPI downloads
+* import zuul job settings from project-config
+* Update reno for stable/rocky
+
 1.20.0
 ------
 
 * Switch to stestr
+* Add release note link in README
 * fix tox python3 overrides
 * Trivial: Update pypi url to new url
 * remove obsolete tox environments

@@ -1,1 +1,16 @@
 # This file contains recursive sources that require this package
+glance
+neutron
+os_vif
+oslo.config
+oslo.log
+oslo.messaging
+oslo.middleware
+oslo.service
+oslotest
+python-designateclient
+python-keystoneclient
+python-manilaclient
+python-neutronclient
+taskflow
+tempest

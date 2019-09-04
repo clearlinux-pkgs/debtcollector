@@ -1,6 +1,17 @@
 CHANGES
 =======
 
+1.22.0
+------
+
+* Add Python 3 Train unit tests
+* Replace git.openstack.org URLs with opendev.org URLs
+* Update Sphinx requirement
+* OpenDev Migration Patch
+* Dropping the py35 testing
+* Update master for stable/stein
+* add python 3.7 unit test job
+
 1.21.0
 ------
 

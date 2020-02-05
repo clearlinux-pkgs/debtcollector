@@ -3,10 +3,12 @@ glance
 neutron
 os_vif
 oslo.config
+oslo.context
 oslo.log
 oslo.messaging
 oslo.middleware
 oslo.service
+oslo.utils
 oslotest
 python-designateclient
 python-keystoneclient

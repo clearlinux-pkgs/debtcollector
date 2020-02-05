@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+2.0.0
+-----
+
+* [ussuri][goal] Drop python 2.7 support and testing
+* Update master for stable/train
+
 1.22.0
 ------
 

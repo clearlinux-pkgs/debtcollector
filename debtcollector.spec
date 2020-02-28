@@ -6,7 +6,7 @@
 #
 Name     : debtcollector
 Version  : 2.0.0
-Release  : 43
+Release  : 44
 URL      : http://tarballs.openstack.org/debtcollector/debtcollector-2.0.0.tar.gz
 Source0  : http://tarballs.openstack.org/debtcollector/debtcollector-2.0.0.tar.gz
 Source1  : http://tarballs.openstack.org/debtcollector/debtcollector-2.0.0.tar.gz.asc
@@ -28,8 +28,34 @@ BuildRequires : wrapt
 ========================
 Team and repository tags
 ========================
+
 .. image:: https://governance.openstack.org/tc/badges/debtcollector.svg
-:target: https://governance.openstack.org/tc/reference/tags/index.html
+    :target: https://governance.openstack.org/tc/reference/tags/index.html
+
+.. Change things from this point on
+
+Debtcollector
+=============
+
+.. image:: https://img.shields.io/pypi/v/debtcollector.svg
+    :target: https://pypi.org/project/debtcollector/
+    :alt: Latest Version
+
+A collection of Python deprecation patterns and strategies that help you
+collect your technical debt in a non-destructive manner. The goal of this
+library is to provide well documented developer facing deprecation
+patterns that start of with a basic set and can expand into a larger
+set of patterns as time goes on. The desired output of these patterns
+is to apply the warnings module to emit DeprecationWarning or PendingDeprecationWarning
+or similar derivative to developers using libraries (or potentially
+applications) about future deprecations.
+
+
+* Free software: Apache license
+* Documentation: https://docs.openstack.org/debtcollector/latest
+* Source: https://opendev.org/openstack/debtcollector
+* Bugs: https://bugs.launchpad.net/debtcollector
+* Release Notes: https://docs.openstack.org/releasenotes/debtcollector
 
 %package license
 Summary: license components for the debtcollector package.
@@ -52,6 +78,7 @@ python components for the debtcollector package.
 Summary: python3 components for the debtcollector package.
 Group: Default
 Requires: python3-core
+Provides: pypi(debtcollector)
 
 %description python3
 python3 components for the debtcollector package.
@@ -66,7 +93,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1580946122
+export SOURCE_DATE_EPOCH=1582916330
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar

@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+2.0.1
+-----
+
+* Update hacking for Python3
+* Update the minversion parameter
+* Move docs linting to pep8
+
 2.0.0
 -----
 

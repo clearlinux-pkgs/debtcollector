@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x4F398DEAE440091C (infra-root@openstack.org)
 #
 Name     : debtcollector
-Version  : 2.0.0
-Release  : 44
-URL      : http://tarballs.openstack.org/debtcollector/debtcollector-2.0.0.tar.gz
-Source0  : http://tarballs.openstack.org/debtcollector/debtcollector-2.0.0.tar.gz
-Source1  : http://tarballs.openstack.org/debtcollector/debtcollector-2.0.0.tar.gz.asc
+Version  : 2.0.1
+Release  : 45
+URL      : http://tarballs.openstack.org/debtcollector/debtcollector-2.0.1.tar.gz
+Source0  : http://tarballs.openstack.org/debtcollector/debtcollector-2.0.1.tar.gz
+Source1  : http://tarballs.openstack.org/debtcollector/debtcollector-2.0.1.tar.gz.asc
 Summary  : A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.
 Group    : Development/Tools
 License  : Apache-2.0
@@ -28,34 +28,8 @@ BuildRequires : wrapt
 ========================
 Team and repository tags
 ========================
-
 .. image:: https://governance.openstack.org/tc/badges/debtcollector.svg
-    :target: https://governance.openstack.org/tc/reference/tags/index.html
-
-.. Change things from this point on
-
-Debtcollector
-=============
-
-.. image:: https://img.shields.io/pypi/v/debtcollector.svg
-    :target: https://pypi.org/project/debtcollector/
-    :alt: Latest Version
-
-A collection of Python deprecation patterns and strategies that help you
-collect your technical debt in a non-destructive manner. The goal of this
-library is to provide well documented developer facing deprecation
-patterns that start of with a basic set and can expand into a larger
-set of patterns as time goes on. The desired output of these patterns
-is to apply the warnings module to emit DeprecationWarning or PendingDeprecationWarning
-or similar derivative to developers using libraries (or potentially
-applications) about future deprecations.
-
-
-* Free software: Apache license
-* Documentation: https://docs.openstack.org/debtcollector/latest
-* Source: https://opendev.org/openstack/debtcollector
-* Bugs: https://bugs.launchpad.net/debtcollector
-* Release Notes: https://docs.openstack.org/releasenotes/debtcollector
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package license
 Summary: license components for the debtcollector package.
@@ -79,21 +53,24 @@ Summary: python3 components for the debtcollector package.
 Group: Default
 Requires: python3-core
 Provides: pypi(debtcollector)
+Requires: pypi(wrapt)
+Requires: pypi(pbr)
+Requires: pypi(six)
 
 %description python3
 python3 components for the debtcollector package.
 
 
 %prep
-%setup -q -n debtcollector-2.0.0
-cd %{_builddir}/debtcollector-2.0.0
+%setup -q -n debtcollector-2.0.1
+cd %{_builddir}/debtcollector-2.0.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582916330
+export SOURCE_DATE_EPOCH=1586270642
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
@@ -110,7 +87,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/debtcollector
-cp %{_builddir}/debtcollector-2.0.0/LICENSE %{buildroot}/usr/share/package-licenses/debtcollector/57aed0b0f74e63f6b85cce11bce29ba1710b422b
+cp %{_builddir}/debtcollector-2.0.1/LICENSE %{buildroot}/usr/share/package-licenses/debtcollector/57aed0b0f74e63f6b85cce11bce29ba1710b422b
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :

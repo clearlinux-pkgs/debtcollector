@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+2.1.0
+-----
+
+* Stop to use the \_\_future\_\_ module
+* Switch to newer openstackdocstheme and reno versions
+* Switch to Victoria tests
+* Update master for stable/ussuri
+
 2.0.1
 -----
 

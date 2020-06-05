@@ -1,6 +1,5 @@
 # This file contains recursive sources that require this package
 gnocchiclient
-heat
 neutron
 os_vif
 oslo.config

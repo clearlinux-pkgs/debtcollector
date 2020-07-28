@@ -8,7 +8,6 @@ oslo.db
 oslo.log
 oslo.messaging
 oslo.middleware
-oslo.serialization
 oslo.service
 oslo.utils
 pycadf
@@ -16,5 +15,4 @@ python-designateclient
 python-keystoneclient
 python-manilaclient
 python-neutronclient
-taskflow
 tempest
